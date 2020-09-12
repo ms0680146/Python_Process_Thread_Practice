@@ -16,10 +16,10 @@ def main():
     # 透過 target 參數傳入一個函數來表示 process 啟動後要執行的程式碼
     # 後面的 args 代表傳遞給函數的參數
     # Process 物件的 start 方法來啟動 process 而 join 方法 (method) 表示等待 process 執行結束。
-    p1 = Process(target = download_task, args = ('Python.pdf', ))
+    p1 = Process(target = download_task, args = ('test1.pdf', ))
     p1.start()
 
-    p2 = Process(target = download_task, args = ('Hot.avi', ))
+    p2 = Process(target = download_task, args = ('test2.pdf', ))
     p2.start()
     
     p1.join()
